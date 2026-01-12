@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Desarrollador FullStack</title>
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/custom.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold gradient-text">{"Marcelo Moll"}</div>
+            <div class="flex gap-8">
+                <a href="#inicio" class="text-sm hover:text-blue-400 transition">Inicio</a>
+                <a href="#proyecto" class="text-sm hover:text-blue-400 transition">Proyecto</a>
+                <a href="#skills" class="text-sm hover:text-blue-400 transition">Skills</a>
+                <a href="#contacto" class="text-sm hover:text-blue-400 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="max-w-6xl mx-auto px-6 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Contenido izquierdo -->
+                <div class="z-10">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                        Desarrollador <span class="gradient-text ">FullStack</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                        Construyo aplicaciones web completas y reales que resuelven problemas de negocio. Desde bases de datos hasta interfaces intuitivas, manejo todo el stack.
+                    </p>
+                    <div class="flex gap-4 mb-12">
+                        <button class="cta-button">Ver Proyecto</button>
+                        <button class="px-8 py-3 border border-blue-500 rounded-lg hover:bg-blue-500 hover:bg-opacity-10 transition">Contactar</button>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-400 mb-4">Tech Stack</p>
+                        <div class="flex flex-wrap">
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Express</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Tailwind</span>
+                            <span class="tech-badge">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elemento visual derecho -->
+                <div class="relative h-96 md:h-full min-h-96">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg opacity-20 blur-3xl"></div>
+                    <div class="relative bg-gradient-to-br from-slate-700 to-slate-900 rounded-lg p-8 border border-blue-500 border-opacity-30 float">
+                        <div class="space-y-4">
+                            <div class="h-3 bg-blue-500 rounded w-3/4 opacity-70"></div>
+                            <div class="h-3 bg-purple-500 rounded w-2/3 opacity-70"></div>
+                            <div class="h-3 bg-blue-500 rounded w-4/5 opacity-70"></div>
+                            <div class="mt-8 space-y-2">
+                                <div class="h-2 bg-gray-600 rounded w-full"></div>
+                                <div class="h-2 bg-gray-600 rounded w-full"></div>
+                                <div class="h-2 bg-gray-600 rounded w-4/5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyecto Destacado -->
+    <section id="proyecto" class="py-20 bg-slate-900 bg-opacity-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">
+                Mi <span class="gradient-text">Proyecto Principal</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="project-card glow">
+                    <h3 class="text-2xl font-bold mb-4">Sistema de Gestión de Negocio</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Aplicación web completa en producción que gestiona operaciones críticas de un negocio real. Maneja inventario, clientes, transacciones y reportes en tiempo real.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <p class="flex items-center gap-3">
+                            <span class="text-blue-400">→</span>
+                            <span>API REST con Node.js y Express</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <span class="text-purple-400">→</span>
+                            <span>Base de datos MySQL optimizada</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <span class="text-blue-400">→</span>
+                            <span>Dashboard interactivo con React</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <span class="text-purple-400">→</span>
+                            <span>Autenticación y seguridad implementada</span>
+                        </p>
+                    </div>
+                    <button class="cta-button w-full">Ver Detalles</button>
+                </div>
+
+                <div class="relative h-80 bg-gradient-to-br from-slate-700 to-slate-900 rounded-lg border border-blue-500 border-opacity-30 p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-2 mb-6">
+                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                        </div>
+                        <p class="text-sm text-gray-400 font-mono mb-4">Dashboard.jsx</p>
+                    </div>
+                    <div class="space-y-2 text-xs text-gray-400 font-mono">
+                        <p>{'<Dashboard />'}</p>
+                        <p class="text-purple-400">// Datos en vivo</p>
+                        <p>// Actualización en tiempo real</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">
+                <span class="gradient-text">Skills</span> & Tecnologías
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="skill-item">
+                    <h3 class="text-lg font-bold mb-3 text-blue-400">Frontend</h3>
+                    <p class="text-gray-300">React.js, HTML5, CSS3, Tailwind CSS, JavaScript moderno, Responsive Design</p>
+                </div>
+                <div class="skill-item">
+                    <h3 class="text-lg font-bold mb-3 text-purple-400">Backend</h3>
+                    <p class="text-gray-300">Node.js, Express.js, APIs REST, Autenticación, Middleware, Validaciones</p>
+                </div>
+                <div class="skill-item">
+                    <h3 class="text-lg font-bold mb-3 text-blue-400">Base de Datos</h3>
+                    <p class="text-gray-300">MySQL, Queries optimizadas, Relaciones, Índices, Integridad de datos</p>
+                </div>
+                <div class="skill-item">
+                    <h3 class="text-lg font-bold mb-3 text-purple-400">Herramientas</h3>
+                    <p class="text-gray-300">Git, npm, Postman, VS Code, Control de versiones</p>
+                </div>
+                <div class="skill-item">
+                    <h3 class="text-lg font-bold mb-3 text-blue-400">Métodos</h3>
+                    <p class="text-gray-300">Desarrollo iterativo, Testing, Debugging, Optimización de performance</p>
+                </div>
+                <div class="skill-item">
+                    <h3 class="text-lg font-bold mb-3 text-purple-400">Soft Skills</h3>
+                    <p class="text-gray-300">Resolución de problemas, Documentación, Comunicación, Adaptabilidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="contacto" class="py-20 bg-slate-900 bg-opacity-50">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Listo para trabajar juntos?</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Tengo experiencia construyendo soluciones reales. Hablemos sobre tu proyecto.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="cta-button">Enviar Email</button>
+                <button class="px-8 py-3 border border-blue-500 rounded-lg hover:bg-blue-500 hover:bg-opacity-10 transition">LinkedIn</button>
+                <button class="px-8 py-3 border border-blue-500 rounded-lg hover:bg-blue-500 hover:bg-opacity-10 transition">GitHub</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-blue-500 border-opacity-20 py-8 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6 text-center text-gray-400 text-sm">
+            <p>© 2026 Desarrollador FullStack.</p>
+        </div>
+    </footer>
+</body>
+</html>
